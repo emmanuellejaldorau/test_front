@@ -13,16 +13,17 @@ A partir des api disponibles sur le site [data.culture.gouv.fr][1] vous devrez c
 
 ### Pour la partie nuit des musées 2018
 - ✌ Un Graph sur le nombre d'événements par villes, par régions, et par départements
-- ✌ Une carte de la france avec les départements placés dessus
+- ✌ Une carte de la france avec les événements placés dessus
   + 👌 Avec un système de choix de la langue
 
 ### Autre
 + ✌ Utiliser des styled components
++ ✌ Utiliser des functionnal components et des hooks
 + 👌 Mettre en place des tests
 + 👌 Utiliser TypeScript
 
 ## A savoir
-Le but de ce test et de pouvoir cerner votre niveau sur l'environement React. Des points clef comme la qualité du code, l'architecture de vos fichiers et de vos components seront pris en compte. Le design que vous choisirez et la lisibilité de vos graphiques seront aussi des éléments différenciants.
+Le but de ce test et de pouvoir cerner votre niveau sur l'environement React. Des points clef comme la qualité du code, la gestion des données, l'architecture de vos fichiers et de vos components seront pris en compte. Le design que vous choisirez et la lisibilité de vos graphiques seront aussi des éléments différenciants.
 
 Vous êtes libre d'étendre le test pour inclure d'autres librairies / éléments que vous connaissez et qui ne sont pas couvert par l'état actuel du test.
 
