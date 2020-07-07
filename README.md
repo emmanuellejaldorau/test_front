@@ -1,16 +1,35 @@
-### Enoncé du test
+## Ennoncé du test
+A partir des api disponibles sur le site [data.culture.gouv.fr][1] vous devrez créer un dashboard permettant de visualiser et interpréter les données disponibles sur les musées. Ce Dashboard sera divisé en deux grandes parties : la première concernant les musées en général et la seconde spécifique à la nuit des musées de 2018. Les éléments qui doivent y figurer sont les suivants:
 
-À l’aide de l’API github, vous devrez réaliser une datavisualisation sur les issues du repository microsoft/vscode, à partir d’une base de projet (https://github.com/Askmona/test_front) que nous vous aurons fourni.
-Voici la consigne :
-- Vous devrez afficher un graphique ligne permettant de suivre l’évolution du nombre d’issues actives dans le temps (Bonus: Ajout de date picker permettant de visualiser les données sur une période sélectionnée). Pour ce faire vous devrez utiliser la librairie chartjs.org
-                
-Vous aurez carte blanche sur le design du projet. Une fois terminé vous devrez héberger votre réalisation sur un repository github et nous envoyer son lien. Toute fonctionnalité supplémentaire est la bienvenue. Nous vous laissons une semaine pour nous renvoyer le test.
-                
-PS: Voici une liste de lien pour chartjs qui vous aideront à appréhender la librairie plus rapidement :
-https://www.chartjs.org/docs/latest/getting-started/usage.html
-https://www.chartjs.org/docs/latest/charts/line.html
-https://www.chartjs.org/docs/latest/axes/cartesian/time.html
-              
-De plus vous rencontrerez surement des limitations sur l’api github, nous vous invitons à être ingénieux quant à la mise en cache des données en local.
+✌ = élément requis
+👌 = élément bonus
+
+### Pour la partie liste des musées
+- ✌ Liste des musées avec pour chacun les informations principales
+  + 👌 Avec une recherche par ville
+  + 👌 Avec un système de pagination
+- ✌ Une page pour chaque musée avec les informations détaillés accessible depuis la liste
+  + 👌 Avec un graph représentant l'évolution de la fréquentation
+
+### Pour la partie nuit des musées 2018
+- ✌ Un Graph sur le nombre d'événements par villes, par régions, et par départements
+- ✌ Une carte de la france avec les départements placés dessus
+  + 👌 Avec un système de choix de la langue
+
+### Autre
++ ✌ Utiliser des styled components
++ 👌 Mettre en place des tests
++ 👌 Utiliser TypeScript
+
+## A savoir
+Le but de ce test et de pouvoir cerner votre niveau sur l'environement React. Des points clef comme la qualité du code, l'architecture de vos fichiers et de vos components seront pris en compte. Le design que vous choisirez et la lisibilité de vos graphiques seront aussi des éléments différenciants.
+
+Vous êtes libre d'étendre le test pour inclure d'autres librairies / éléments que vous connaissez et qui ne sont pas couvert par l'état actuel du test.
+
+Pour l'affichage des graphiques, nous vous recommendons d'utiliser les librairies [chart.js][2] et [chartjs-chart-geo][3] mais vous êtes libre de vous diriger vers une autre si elle vous semble plus pertinante.
 
 Bonne chance !
+
+[1]: https://data.culture.gouv.fr/explore/?refine.theme=Mus%C3%A9es&sort=modified
+[2]: https://github.com/chartjs/Chart.js
+[3]: https://github.com/sgratzl/chartjs-chart-geo
