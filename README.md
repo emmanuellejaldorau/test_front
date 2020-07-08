@@ -1,3 +1,6 @@
+# Test de connaissance - React
+Pour réaliser ce test, nous vous invitons à travailler sur un fork du repository. Une fois terminé, vous devrez créer une pull request vers le repo d'origine et nous prévenir par mail. N'hésitez pas à ajouter en description de la PR des informations / retours qui vous paraissent importants.
+
 ## Ennoncé du test
 A partir des api disponibles sur le site [data.culture.gouv.fr][1] vous devrez créer un dashboard permettant de visualiser et interpréter les données disponibles sur les musées. Ce Dashboard sera divisé en deux grandes parties : la première concernant les musées en général et la seconde spécifique à la nuit des musées de 2018. Les éléments qui doivent y figurer sont les suivants:
 
