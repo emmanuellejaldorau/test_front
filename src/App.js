@@ -17,11 +17,11 @@ const Container = styled.div`
 
 const Box = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1;
   border-radius: 5px;
-  background: white;
-  height: 100vh
-  flex-direction: column;
+  background: #e7e7e7;
   white-space: pre-line;
   padding: 5px;
 `
