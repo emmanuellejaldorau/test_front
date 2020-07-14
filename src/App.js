@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { ThemeProvider } from "styled-components"
 import theme from "./theme/";
 import "./theme/baseline.css";
+import MuseumsList from 'components/MuseumsList';
 
 const Container = styled.div`
   display: flex;
@@ -29,7 +30,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container>
         <Box>
-          <code>
+          <MuseumsList/>
+          {/* <code>
             {`
               À l’aide de l’API github, vous devrez réaliser une datavisualisation sur les issues du repository microsoft/vscode, à partir d’une base de projet (https://github.com/Askmona/test_front) que nous vous aurons fourni.
               Voici la consigne :
@@ -45,7 +47,7 @@ function App() {
               De plus vous rencontrerez surement des limitations sur l’api github, nous vous invitons à être ingénieux quant à la mise en cache des données en local.
               Bonne chance !
             `}
-          </code>
+          </code> */}
         </Box>
       </Container>
     </ThemeProvider>
