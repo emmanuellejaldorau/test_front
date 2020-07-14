@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from "styled-components"
+import React, {useRef} from 'react';
+import styled from "styled-components";
+import Chart from 'components/Chart';
 
 const NuitDesMusees = (props) => {
     const Wrapper = styled.div`
@@ -23,6 +24,7 @@ const NuitDesMusees = (props) => {
         <Wrapper>
             <Box boxStyle="50px">
                 <Title>Nuit des musées 2018</Title>
+                <Chart/>
             </Box>
             <Box>
                 <Title>Nuit des musées 2018</Title>
