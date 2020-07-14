@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from "styled-components"
 import theme from "./theme/";
 import "./theme/baseline.css";
 import MuseumsList from 'components/MuseumsList';
+import NuitDesMusees from 'components/NuitDesMusees';
 
 const Container = styled.div`
   display: flex;
@@ -31,6 +32,7 @@ function App() {
       <Container>
         <Box>
           <MuseumsList/>
+          <NuitDesMusees />
           {/* <code>
             {`
               À l’aide de l’API github, vous devrez réaliser une datavisualisation sur les issues du repository microsoft/vscode, à partir d’une base de projet (https://github.com/Askmona/test_front) que nous vous aurons fourni.
