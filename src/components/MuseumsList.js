@@ -31,7 +31,6 @@ const MuseumsList = (props) => {
         const url = 'https://data.culture.gouv.fr/api/records/1.0/search/?dataset=liste-et-localisation-des-musees-de-france&q=&facet=region&facet=departement';
         let response = await axios(url)
         setData(response.data.records);
-        console.log("happening",response.data.records);
     }
 
     useEffect(() => {
