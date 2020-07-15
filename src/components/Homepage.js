@@ -7,7 +7,6 @@ const Homepage = (props) => {
     const Box = styled.div`
         display: flex;
         justify-content: space-around;
-        flex: 1;
     `
     
     return(

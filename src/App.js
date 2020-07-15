@@ -17,10 +17,12 @@ const Container = styled.div`
 `
 
 const Box = styled.div`
+  flex:1;
   border-radius: 5px;
   background: #e7e7e7;
   white-space: pre-line;
   padding: 15px 5px;
+  min-height: 100vh;
 `
 
 function App() {
