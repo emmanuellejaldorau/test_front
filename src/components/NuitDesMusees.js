@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import Chart from 'components/Chart';
-import MuseumDetails from 'components/MuseumDetails'
 
 const NuitDesMusees = (props) => {
     const Wrapper = styled.div`

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 const MuseumsList = (props) => {
     const Box = styled.div`
@@ -17,6 +18,7 @@ const MuseumsList = (props) => {
         border-bottom: 1px #acacac solid;
         padding: 10px 0;
         font-weight: ${props => props.lineStyle || "normal"};
+        color: black;
     `
 
     const Cell = styled.div`
@@ -47,12 +49,14 @@ const MuseumsList = (props) => {
                 <Cell>Site web</Cell> 
             </StyledLine>
             {data.map(elt =>{
-                return <StyledLine key={elt.recordid}>
-                    <Cell>{elt.fields.nom_du_musee}</Cell>
-                    <Cell>{elt.fields.ville}</Cell>
-                    <Cell>{elt.fields.telephone1}</Cell>  
-                    <Cell>{elt.fields.sitweb}</Cell>                   
-                </StyledLine>
+                return <Link to={`/museums/${elt.recordid}`} key={elt.recordid} style={{ textDecoration: 'none' }}>
+                    <StyledLine>
+                        <Cell>{elt.fields.nom_du_musee}</Cell>
+                        <Cell>{elt.fields.ville}</Cell>
+                        <Cell>{elt.fields.telephone1}</Cell>  
+                        <Cell>{elt.fields.sitweb}</Cell>                   
+                    </StyledLine>
+                </Link>
             })}
         </Box>
     )
