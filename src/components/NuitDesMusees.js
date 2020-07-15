@@ -1,6 +1,7 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import styled from "styled-components";
 import Chart from 'components/Chart';
+import MuseumDetails from 'components/MuseumDetails'
 
 const NuitDesMusees = (props) => {
     const Wrapper = styled.div`
@@ -23,11 +24,11 @@ const NuitDesMusees = (props) => {
     return(
         <Wrapper>
             <Box boxStyle="50px">
-                <Title>Nuit des musées 2018</Title>
+                <Title>Nuit des musées 2018 (graphique)</Title>
                 <Chart/>
             </Box>
             <Box>
-                <Title>Nuit des musées 2018</Title>
+                <Title>Nuit des musées 2018 (carte)</Title>
             </Box>
         </Wrapper>
     )
