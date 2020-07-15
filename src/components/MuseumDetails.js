@@ -29,7 +29,7 @@ const MuseumDetails = (props) => {
     }, []);
 
     const Title = styled.h1`
-        color: #2e2e7a;
+        color: #6b6ecf;
         margin-left: 20px;
         margin-right: 20px;
     `

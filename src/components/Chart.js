@@ -1,29 +1,23 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Chartjs from 'chart.js';
 
-const chartConfig = {
+
+const Chart = (props) => {
+
+  const chartConfig = {
     type: 'bar',
     data: {
+        labels: props.labels,
         datasets: [{
-            label: 'Region Dataset',
-            data: [10, 20, 30, 40]
-            }, {
-            label: 'Department Dataset',
-            data: [50, 50, 50, 50]
-            }, {
-            label: 'Ville Dataset',
-            data: [10, 20, 30, 40]
-        }],
-        labels: ['January', 'February', 'March', 'April']
+            label: 'Évènements par Région',
+            data: props.counts
+        }]
     },
     options: {
-        // ...
+      //...
     }
 };
 
-
-
-const Chart = () => {
   const chartContainer = useRef(null);
   const [chartInstance, setChartInstance] = useState(null);
 
