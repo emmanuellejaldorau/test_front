@@ -2,8 +2,7 @@ import React from 'react';
 import styled, { ThemeProvider } from "styled-components";
 import theme from "./theme/";
 import "./theme/baseline.css";
-import MuseumsList from 'components/MuseumsList';
-import NuitDesMusees from 'components/NuitDesMusees';
+import Homepage from 'components/Homepage';
 
 const Container = styled.div`
   display: flex;
@@ -16,9 +15,6 @@ const Container = styled.div`
 `
 
 const Box = styled.div`
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
   border-radius: 5px;
   background: #e7e7e7;
   white-space: pre-line;
@@ -30,8 +26,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container>
         <Box>
-          <MuseumsList/>
-          <NuitDesMusees />
+          <Homepage />
         </Box>
       </Container>
     </ThemeProvider>
